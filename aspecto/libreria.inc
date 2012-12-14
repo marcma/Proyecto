@@ -8,25 +8,51 @@
 				echo '<a href="'.$enlace.'"><span>'.$descripcion.'</span></a>';
 		echo '</div>';
 	}
-	function dibuja(){
-		include('../aspecto/cabecera.html');
+	
+	//Funcion para que pinte en login sin menu
+	function dibuja0(){
+		include('../aspecto/cuerpo.html');
+		$menu = array('Login'=>'./vistas/login.php');
+		DibujaMenuBotones($menu,'menu_botones_enlace1');
+
 		echo '<br>';echo '<br>';
-		$menu = array('Inicio'=>'../ppal/principal.php');
+
+		include('../aspecto/pie.html');
+		
+	}
+	
+	function dibuja(){
+		include('./aspecto/cuerpo.html');
+		$menu = array('Login'=>'./vistas/login.php');
+		DibujaMenuBotones($menu,'menu_botones_enlace1');
+
+		echo '<br>';echo '<br>';
+
+		include('./aspecto/pie.html');
+	}
+	
+	function dibuja2(){
+		include('./aspecto/cabecera.html');
+		$menu = array('Inicio'=>'index2.php');
 		DibujaMenuBotones($menu,'menu_botones_enlace2');
-		$menu = array('Validar usuario'=>'../ppal/valida_us.php');
+		$menu = array('Login'=>'./vistas/login.php');
+		DibujaMenuBotones($menu,'menu_botones_enlace1');
+
+		echo '<br>';echo '<br>';
+
+		include('./aspecto/pie.html');
+	}	
+	
+	function dibuja1(){
+		include('../../aspecto/cabecera.html');
+		$menu = array('Inicio'=>'index2.php');
+		DibujaMenuBotones($menu,'menu_botones_enlace2');
+		$menu = array('Login'=>'./vistas/login.php');
 		DibujaMenuBotones($menu,'menu_botones_enlace1');
 		echo '<br>';echo '<br>';
+		include('../../aspecto/pie.html');
+
+
+	}	
 	
-		$menu = array('Alta socio'=>'../socios/alta.php','Buscar usuario' =>'../usuarios/buscar.php','Eliminar usuario'=>'../usuarios/eliminar.php', 'Eliminar usuario1'=>'../usuarios/eliminar1.php', 'Ordenar usuarios'=>'../usuarios/ordenar.php', 'Modificar usuario'=>'../usuarios/modificar.php');
-
-		
-		$menu = array('Alta encuesta'=>'../encuesta/alta_e.php','Buscar encuesta'=>'../encuesta/buscar_e.php','Eliminar encuesta'=>'../encuesta/eliminar_e.php', 'Ordenar encuesta'=>'../encuesta/ordenar_e.php', 'Modificar encuesta'=>'../encuesta/modificar_e.php');
-
-		
-		$menu = array('Alta respuestas encuesta'=>'../respuestas/alta_encuesta_respuestas.php','Buscar respuestas encuesta'=>'../respuestas/buscar_encuesta_respuestas.php','Elimina respuestas encuesta'=>'../respuestas/eliminar_encuesta_respuestas.php','Ordenar respuestas encuesta'=>'../respuestas/ordenar_encuesta_respuestas.php','Modificar respuestas encuesta'=>'../respuestas/modificar_encuesta_respuestas.php');
-
-		
-		$menu = array('Selecciona encuesta'=>'../responde/selecciona_encuesta.php');
-
-	}
-?> */
+?> 
