@@ -99,7 +99,7 @@ class ExcepcionEnTransaccion extends Exception{
 		if ($db->errno != 0)
 			throw new Exception('Error seleccionando bd:'.$db->error, $db->errno);
 		
-		$consulta = "insert into usuarios (usuario,password,nombre,apellido1,apellido2,edad,direccion,telefono,dni,email,tipo) values ('$usuario','$password','$nombre','$apellido1','$apellido2',$telefono,'$direccion',$telefono,'$dni','$email','$tipo')";
+		$consulta = "insert into usuarios (usuario,password,nombre,apellido1,apellido2,edad,direccion,telefono,dni,email,tipo) values ('$usuario','$password','$nombre','$apellido1','$apellido2',$edad,'$direccion',$telefono,'$dni','$email','$tipo')";
 				
 		if ($db->query($consulta) === false)
 			throw new ExcepcionEnTransaccion();

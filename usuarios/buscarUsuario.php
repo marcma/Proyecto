@@ -63,17 +63,17 @@ function LimpiaResultados($objeto){
 					while ($obj = $resultado->fetch_object()){
 						LimpiaResultados($obj);
 						echo'<tr>';
-						echo'<td align="center">'.$obj->usuario.'</td>';
-						echo'<td align="center">'.$obj->password.'</td>';
-						echo'<td align="center">'.$obj->nombre.'</td>';
-						echo'<td align="center">'.$obj->apellido1.'</td>';
-						echo'<td align="center">'.$obj->apellido2.'</td>';
-						echo'<td align="center">'.$obj->edad.'</td>';
-						echo'<td align="center">'.$obj->direccion.'</td>';
-						echo'<td align="center">'.$obj->telefono.'</td>';
-						echo'<td align="center">'.$obj->dni.'</td>';
-						echo'<td align="center">'.$obj->email.'</td>';
-						echo'<td align="center">'.$obj->tipo.'</td>';
+							echo'<td align="center">'.$obj->usuario.'</td>';
+							echo'<td align="center">'.$obj->password.'</td>';
+							echo'<td align="center">'.$obj->nombre.'</td>';
+							echo'<td align="center">'.$obj->apellido1.'</td>';
+							echo'<td align="center">'.$obj->apellido2.'</td>';
+							echo'<td align="center">'.$obj->edad.'</td>';
+							echo'<td align="center">'.$obj->direccion.'</td>';
+							echo'<td align="center">'.$obj->telefono.'</td>';
+							echo'<td align="center">'.$obj->dni.'</td>';
+							echo'<td align="center">'.$obj->email.'</td>';
+							echo'<td align="center">'.$obj->tipo.'</td>';
 						echo'</tr>';
 					}
 					echo'</table>';
