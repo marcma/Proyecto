@@ -1,0 +1,193 @@
+tr.color:hover td{
+ background-color: #CED8F6;
+}
+
+
+#alta  th{
+background-color: #5882FA;
+
+}
+
+#alta  .par {
+background-color: #81BEF7;
+}
+
+
+#alta  .impar{
+
+background-color: #A9D0F5;
+}
+
+
+#menuh-container
+	{
+	position: fixed;		
+	top: 5%;
+	left: 33%;
+	}
+
+#menuh
+	{
+	font-size: small;
+	font-family: arial, helvetica, sans-serif;
+	width:100%;
+	float:left;
+	margin:2em;
+	margin-top: 1em;
+	}
+		
+#menuh a
+	{
+	text-align: center;
+	display:block;
+	border: 1px solid #0040FF;
+	white-space:nowrap;
+	margin:0;
+	padding: 0.3em;
+	}
+	
+#menuh a:link, #menuh a:visited, #menuh a:active	/* menu at rest */
+	{
+	color: white;
+	background-color: #0040FF;		/* royal blue */
+	text-decoration:none;
+	}
+	
+#menuh a:hover						/* menu on mouse-over  */
+	{
+	color: white;
+	background-color: #668CFF;	/* cornflowerblue */
+	text-decoration:none;
+	}	
+	
+#menuh a.top_parent, #menuh a.top_parent:hover  /* attaches down-arrow to all top-parents */
+	{
+	background-image: url(navdown_white.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	}
+	
+#menuh a.parent, #menuh a.parent:hover 	/* attaches side-arrow to all parents */
+	{
+	background-image: url(nav_white.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	}
+
+#menuh ul
+	{
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+	width:9em;	/* width of all menu boxes */
+	/* NOTE: For adjustable menu boxes you can comment out the above width rule.
+	However, you will have to add padding in the "#menh a" rule so that the menu boxes
+	will have space on either side of the text -- try it */
+	}
+
+#menuh li
+	{
+	position:relative;
+	min-height: 1px;		/* Sophie Dennis contribution for IE7 */
+	vertical-align: bottom;		/* Sophie Dennis contribution for IE7 */
+	}
+
+#menuh ul ul
+	{
+	position:absolute;
+	z-index:500;
+	top:auto;
+	display:none;
+	padding: 1em;
+	margin:-1em 0 0 -1em;
+	}
+
+#menuh ul ul ul
+	{
+	top:0;
+	left:100%;
+	}
+
+div#menuh li:hover
+	{
+	cursor:pointer;
+	z-index:100;
+	}
+
+div#menuh li:hover ul ul,
+div#menuh li li:hover ul ul,
+div#menuh li li li:hover ul ul,
+div#menuh li li li li:hover ul ul
+{display:none;}
+
+div#menuh li:hover ul,
+div#menuh li li:hover ul,
+div#menuh li li li:hover ul,
+div#menuh li li li li:hover ul
+{display:block;}
+
+/* End CSS Drop Down Menu */
+
+
+
+
+
+.texto_cabecera1 {
+	
+	background-color: black; font-family: Verdana, Arial;
+	font-size: medium; color: #FFFFFF; font-weight: bold;
+	position: fixed; top: 0; left: 0; width: 100%; height: 9%;/*para poner un encabezado de página*/
+	text-align:left; line-height:40px;/*alinear el texto horiz y vert*/
+}
+.texto_cabecera2 {
+	background-color: black; font-family: Verdana, Arial;
+	font-size: small; color: #FFFFFF; 
+	position:fixed; bottom:0; left: 0; width: 100%; height: 1.5em;/*para poner un pie de página*/
+	text-align:center; 
+}
+.texto_cabecera3 {
+	font-family: Verdana, Arial;
+	font-size: 30px; color: black; font-weight: bold;
+}
+.menu_botones_enlace a {
+	font-size: 90%; font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 2mm; margin-right: 1mm; margin-bottom: 2mm;
+	margin-left: auto; border:1px solid #111111;
+	padding:3px; width: 15%; color: #0066CC;
+	background-color: #FFFFFF; text-align: center;
+	text-decoration: none;
+}
+.menu_botones_enlace a:hover {
+	border:1px ridge #0066CC; color: #FFFFFF;
+	background-color: #0066CC;
+}
+.menu_botones_enlace1 a {
+	font-size: 90%; font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 2mm; margin-right: 1mm; margin-bottom: 2mm;
+	margin-left: auto; border:1px solid #111111;
+	padding:3px; width: 10%; color: #0066CC;
+	background-color: #FFFFFF; text-align: center;
+	text-decoration: none;
+	position:absolute; float:right; right:54px;/*para situar a la dcha de la página*/
+}
+.menu_botones_enlace1 a:hover {
+	border:1px ridge #0066CC; color: #FFFFFF;
+	background-color: #0066CC;
+}
+.menu_botones_enlace2 a {
+	font-size: 90%; font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 2mm; margin-right: 1mm; margin-bottom: 2mm;
+	margin-left: auto; border:1px solid #111111;
+	padding:3px; width: 10%; color: #0066CC;
+	background-color: #FFFFFF; text-align: center;
+	text-decoration: none;
+	position:absolute; float:right; right:254px;/*para situar a la dcha de la página*/
+}
+.menu_botones_enlace2 a:hover {
+	border:1px ridge #0066CC; color: #FFFFFF;
+	background-color: #0066CC;
+}
