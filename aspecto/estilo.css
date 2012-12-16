@@ -1,0 +1,266 @@
+body{
+	font-size: 14px; 
+	font-family: Verdana;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	background-image: url(fondo.jpg);
+}
+
+.contenedor{
+	width: 1280px; 
+	margin: 0 auto;	
+	padding: 0;
+}
+	
+.header{
+	border-radius: 100px;	
+	height: 40px;
+	background: #386587; 
+	color: #CFFFD2;
+	padding: 20px 0;
+	margin: 0; 
+	box-shadow: 50px 50px 50px black; 	
+}
+
+.header h1{
+	padding: 0 20px;
+	margin: 0;
+	color: #FFE619;
+	font-size: 2.5em;
+	font-family: verdana;
+}
+	
+.nombreSeccion{
+	border-radius: 10px;
+	height: 40px; 
+	background: #386587; 
+	color: #CFFFD2;
+	padding: 10px 0;
+	margin: 0;
+	box-shadow: 10px 10px 5px #ffff11;
+}
+
+.nombreSeccion h1{
+	padding: 0 20px;
+	margin: 0;
+	color: #FFE619;
+	font-size: 1.8em;
+	font-family: verdana;
+}	
+	
+.cuerpo0{
+	border-radius: 5px;
+	margin: 10px 0; 
+	padding: 10px 0;
+	background: #873765; 
+	color: #FFFFFF;
+	box-shadow: 10px 10px 5px #ffffff;
+}
+
+.cuerpo{
+	border-radius: 5px;
+	margin: 10px 0; 
+	padding: 10px 0;
+	background: #873765; 
+	color: #FFFFFF;
+	opacity: 0.9;
+	box-shadow: 10px 10px 5px #ffffff;
+}
+
+.lado1{
+	width: 260px;
+	padding-right: 40px; 
+	margin: 0;
+	float: left; 
+	display: inline;
+}
+
+.lado1 div{
+	font-size: 0.9em;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+
+.lado1 ul li{
+	margin: 3px 0;
+	padding: 0;
+	list-style: none;
+}
+	
+.lado1 ul li a{
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+	background: #668737;
+	padding: 10px;
+	margin: 0;
+}
+.lado1 ul li a:hover{
+	color: #CEF938;
+	background: #3E4D28;
+}
+
+.lado2{
+	width: 660px; 
+	margin: 155px;
+	padding-right: 10px; 
+	float: left; 
+	display: inline;
+}
+
+.clean{
+	clear: both;
+}
+
+
+/*/////////////////////////////////////////////////////*/
+
+.letras{
+	color: white;
+    font-family: Verdana;
+    font-size: 1.0em;
+}
+
+tr.color:hover td{
+	background-color: #CED8F6;
+}
+
+
+#alta  th{
+	background-color: #5882FA;
+
+}
+
+#alta  .par {
+	background-color: #81BEF7;
+}
+
+
+#alta  .impar{
+	background-color: #A9D0F5;
+}
+
+
+#menuh-container{
+	position: absolute;	
+	left: 41%;	
+}
+	
+#menuh-container1{
+	position: relative;	
+}	
+
+#menuh{
+	font-size: small;
+	font-family: verdana;
+	width: 100%;
+	float: left;
+	margin: 2em;
+	margin-top: 1em;
+}
+		
+#menuh a{
+	text-align: center;
+	display: block;
+	border: 1px solid #0040FF;
+	white-space: nowrap;
+	margin:0;
+	padding: 0.3em;
+}
+	
+#menuh a:link, #menuh a:visited, #menuh a:active{
+	color: white;	
+	background-color: #017890;	
+	text-decoration: none;
+}
+	
+#menuh a:hover{
+	color: white bold;
+	background-color: #668CFF;	
+	text-decoration: none;
+}	
+	
+#menuh a.top_parent, #menuh a.top_parent:hover  {
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+	
+#menuh a.parent, #menuh a.parent:hover {
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+#menuh ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 9em;	
+}
+
+#menuh li{
+	position: relative;
+	min-height: 1px;		
+	vertical-align: bottom;		
+}
+
+#menuh ul ul{
+	position: absolute;
+	z-index: 500;
+	top: auto;
+	display: none;
+	padding: 1em;
+	margin: -1em 0 0 -1em;
+}
+
+#menuh ul ul ul{
+	top: 0;
+	left: 100%;
+}
+
+div#menuh li:hover{
+	cursor: pointer;
+	z-index: 100;
+}
+
+div#menuh li:hover ul ul{
+	display: none;
+}
+
+div#menuh li:hover ul{
+	display: block;
+}
+
+.texto_cabecera1 {
+	background-color: black; 
+	font-family: Verdana;
+	font-size: medium; 
+	color: #FFFFFF; 
+	font-weight: bold;
+	position: fixed; 
+	top: 0; left: 0; 
+	width: 100%; 
+	height: 9%;
+	text-align: left; 
+	line-height: 40px;/*alinear el texto horizontal y vertical*/
+}
+.texto_cabecera2 {
+	background-color: black; 
+	font-family: Verdana;
+	font-size: small; 
+	color: #FFFFFF; 
+	position: fixed; 
+	bottom:0; 
+	left: 0; 
+	width: 100%; 
+	height: 1.5em;
+	text-align: right; 
+}
+.texto_cabecera3 {
+	font-family: Verdana;
+	font-size: 30px; 
+	color: black; 
+	font-weight: bold;
+}
