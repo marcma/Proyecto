@@ -34,7 +34,7 @@
 						<tr>
 							<td>Código del libro:</td>								
 							<td>
-								<div id='myform_codLibro_errorloc' class="error_strings"></div>	
+								<div id='myform_pass_errorloc' class="error_strings"></div>	
 								<input type="text" name="codLibro" size="20" maxlength="30" value="<?php echo $obj->codLibro?>" readonly />
 							</td>
 						</tr>
