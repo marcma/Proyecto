@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Modificacion de usuarios</title>		
+		<title>Modificacion de usuarios</title>
+		<script language="JavaScript" src="./javaScripts/gen_validatorv4.js" type="text/javascript" xml:space="preserve"></script>
 		<link rel="stylesheet" href="./aspecto/jquery-ui.css" />
 		<script type="text/javascript" src="./javaScripts/jquery-1.8.3.js"></script>
 		<script type="text/javascript" src="./javaScripts/jquery-ui.js"></script>
-		<script language="JavaScript" src="./javaScripts/gen_validatorv4.js" type="text/javascript" xml:space="preserve"></script>
 		<script>
 			$(function() {
 				$("#datepicker").datepicker();
@@ -32,7 +32,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>Código del libro:</td>								
+							<td>CÃ³digo del libro:</td>								
 							<td>
 								<div id='myform_codLibro_errorloc' class="error_strings"></div>	
 								<input type="text" name="codLibro" size="20" maxlength="30" value="<?php echo $obj->codLibro?>" readonly />
@@ -41,8 +41,8 @@
 						<tr>					
 							<td>Fecha prestamo:</td>					
 							<td>
-								<div id='myform_fecha_errorloc' class="error_strings"></div>
-								<input type="text" id="datepicker" name="fecha" size="20" maxlength="30" value="<?php echo $obj->fechaPrestamo?>" />
+								<div id='myform_fechaPrestamo_errorloc' class="error_strings"></div>
+								<input type="text" id="datepicker" name="fechaPrestamo" size="20" maxlength="30" value="<?php echo $obj->fechaPrestamo?>" />
 							</td>
 						</tr>
 						<tr>
@@ -64,4 +64,4 @@
 			</div>
 		</div>
 	</body>	
-</html>	
+</html>		
