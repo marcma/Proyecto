@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/media/images/favicon.ico" />
+		
+		<title>Buscar usuario</title>
+		<link href="../aspecto/estilo.css" rel="stylesheet" />
+		<link href="./datatable/media/css/demo_page.css" rel="stylesheet" />
+		<link href="./datatable/media/css/demo_table.css" rel="stylesheet" />
+		<script type="text/javascript" language="javascript" src="./datatable/media/js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="./datatable/media/js/jquery.jeditable.js"></script>
+		<script type="text/javascript" language="javascript" src="./datatable/media/js/jquery.dataTables.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				var oTable = $('#example').dataTable( {
+					"bProcessing": true,
+					"bServerSide": true,
+					"sAjaxSource": "./datatable/php/server_processing2.php",
+					"fnDrawCallback": function () {
+						$('#example tbody td').editable( './datatable/php/editable_ajax.php', {
+							"callback": function( sValue, y ) {
+								/* Redraw the table from the new data on the server */
+								oTable.fnDraw();
+							},
+							"height": "14px"
+						} );
+					}
+				} );
+			} );
+		</script>
+		<style type="text/css">
+			h1{
+			color: white;
+					
+			}
+	
+	
+		</style>
+	</head>
+	<body id="dt_example">
+		<div class="contenedor">
+			<div class="nombreSeccion">
+			<h1>Buscar usuarios</h1>
+		</div>
+		<div class="cuerpo">	
+					<div id="container">
+						
+						<div id="dynamic">
+			<table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+				<thead>
+					<tr>
+						<th>Usuario</th>
+						<th>Codigo libro</th>
+						<th>Fecha prestamo</th>	
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="5" class="dataTables_empty">Cargando datos del servidor</td>
+					</tr>
+				</tbody>
+				<tfoot>
+				</tfoot>
+			</table>
+						
+					</div>
+					</div>
+		</div>
+	</body>
+</html>
